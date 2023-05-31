@@ -3,9 +3,128 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
+    <title>Vishwadharma Marathon - 2023</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
-    <img src="images/firefox-icon.png" alt="My test image" />
+      <header>
+        <img class="header-img" src ="vm_logo.jpg" alt="Vishwadharma Logo" />
+        <h1>Vishwa Dharma Marathon - 2023</h1>
+        <img class="header-img" src ="hss_logo.jpg" alt="Vishwadharma Logo" />
+    </header>
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks active" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Statistics')">Statistics</button>
+  <button class="tablinks" onclick="openCity(event, 'Visuals')">Visuals</button>
+</div>
+
+<!-- Tab content inside the tab home -->
+<div id="Home" class="tabcontent">
+  <!--<h3>Introduction</h3><br>-->
+  <p>This is an yearly event that is conducted by HSS at the European Main Land
+level (EML) from the shareerik team including all the EML countries only.<br>
+  The aim of this event is to complete kilometers equal to one rotation of the Earth(40,075km).
+      Along with it, we would have better health and healthy competition.
+  The activities included are: Running, Cycling, Walking & Swimming. The kms can be tracked by
+      using apps of personal choice like strava, google fit etc. or digital watches.
+      <br><br>For more information click here:
+      <a href="FAQ's for VDM.pdf">
+      <button onclick="FAQ's for VDM.pdf">
+      FAQ
+    </button> </a> </p>
+</div>
+<!-- Tab content inside the tab statistics -->
+<div id="Statistics" class="tabcontent">
+<h1 class="text-left-right">
+    <span class="left-text">Number of distinct participants:</span>
+    <span class="byline">168</span>
+</h1>
+<h1 class="text-left-right">
+    <span class="left-text">Total distance covered in km:</span>
+    <span class="byline">5000</span>
+</h1>
+<h1 class="text-left-right">
+    <span class="left-text">Total number of countries participating:</span>
+    <span class="byline">15</span>
+</h1>
+<h1 class="text-left-right">
+    <span class="left-text">Total number of Shakas participating:</span>
+    <span class="byline">20</span>
+</h1>
+</div>
+
+<!-- Tab content inside the tab visuals -->
+<div id="Visuals" class="tabcontent">
+        <!-- The grid: four columns -->
+
+<div class="row">
+  <div class="column">
+    <img src="daily_distance_by_sports.png" alt="Distance based n Sport" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="top_five_names_by_activity.png" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="total_distance_by_country.png" alt="Mountains" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="total_distance_by_shakha.png" alt="Lights" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  if(evt) evt.currentTarget.className += " active";
+    else document.querySelector('button.tablinks').className += " active";
+}
+document.body.addEventListener('DOMContentLoaded', openCity(event, 'Home'));
+
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
   </body>
 </html>
