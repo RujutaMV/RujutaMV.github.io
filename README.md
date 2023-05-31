@@ -1,5 +1,5 @@
 # RujutaMV.github.io
-Repo to host a website for Marathon statistics
+## Repo to host a website for Marathon statistics
 
 This is an yearly event that is conducted by HSS at the European Main Land
 level (EML) from the shareerik team including all the EML countries only.
