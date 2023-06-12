@@ -23,7 +23,8 @@
 <!-- Tab content inside the tab home -->
 <div id="Home" class="tabcontent">
   <!--<h3>Introduction</h3><br>-->
-  <p>This is an yearly event that is conducted by HSS at the European Main Land
+<p>
+This is an yearly event that is conducted by HSS at the European Main Land
 level (EML) from the shareerik team including all the EML countries only.<br>
   The aim of this event is to complete kilometers equal to one rotation of the Earth(40,075km).
       Along with it, we would have better health and healthy competition.
@@ -34,6 +35,59 @@ level (EML) from the shareerik team including all the EML countries only.<br>
       <button onclick="FAQ's for VDM.pdf">
       FAQ
     </button> </a> </p>
+
+  <div class="form">
+  <h2>Contact Form</h2>
+<p>Thank You! for visiting the website! <br>
+  If you want to write to us, feel free to fill the contact form with your message.<br>
+Our team of representatives will surely take your opinion into account. <br>
+Please do not share any private contact information here.</p>
+  </div>
+
+<div class="container1">
+  <form action="https://rujutamv.github.io/">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="Germany">Germany</option>
+        <option value="India">India</option>
+        <option value="France">France</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write your message here.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
 </div>
 <!-- Tab content inside the tab statistics -->
 <div id="Statistics" class="tabcontent">
@@ -67,10 +121,10 @@ level (EML) from the shareerik team including all the EML countries only.<br>
     <img src="top_five_names_by_activity.png" alt="Snow" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="total_distance_by_country.png" alt="Mountains" onclick="myFunction(this);">
+    <img src="total_distance_by_Country.png" alt="Mountains" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="total_distance_by_shakha.png" alt="Lights" onclick="myFunction(this);">
+    <img src="total_distance_by_Associated Shakha.png" alt="Lights" onclick="myFunction(this);">
   </div>
 </div>
 
@@ -125,6 +179,7 @@ function myFunction(imgs) {
   expandImg.parentElement.style.display = "block";
 }
 </script>
+
 
   </body>
 </html>
