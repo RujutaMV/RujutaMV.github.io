@@ -6,34 +6,36 @@ background-image: url('t.jpg');
   background-size: cover;
 }
 .header-img {
-    height: 10%;
-    width: 10%;
-    margin-left: 120px;
-    margin-top: 45px;
+    height: 5%;
+    width: 5%;
+
 }
 
 header {
-   background: navy;
-  position: relative;
+   background: lightblue;
+   position: relative;
+    height: auto;
+    max-width: 100%;
 }
 
 header h1 {
     display: inline;
     color: coral;
   font-family: verdana;
-  font-size: 450%;
+  font-size: 350%;
   text-align: center;
-  margin-left: 90px;
+  margin-left: 50px;
   text-shadow: 2px 2px #ff0000;
   font-style: italic;
 }
+
 
 /* Style the paragraph */
 p  {
     color: steelblue;
   font-family: verdana;
-  font-size: 80%;
-  margin-left: 40px;
+  font-size: 60%;
+  margin-left: 60px;
   margin-right: 40px;
 }
 button
@@ -46,7 +48,6 @@ font-family: verdana;
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
   background-color: lightblue;
 }
 
@@ -54,22 +55,20 @@ font-family: verdana;
 .tab button {
   background-color: inherit;
   float: left;
-  border: double;
-  outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 200%;
+  padding: 5px 10px;
+  font-size: 150%;
+  border:none;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: steelblue;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: darkblue;
+  background-color: steelblue;
 }
 
 /* Style the tab content */
@@ -93,25 +92,32 @@ font-family: verdana;
 
     left: 0;
     position: absolute;
-    font-size: 40px;
+    font-size: 30px;
     font-style: oblique;
-    color: OrangeRed;
+    color: coral;
 }
 .byline {
 text-align: right;
-    font-size: 40px;
+    font-size: 30px;
     margin-right: 900px;
     font-style: oblique;
-    color: Tomato;
+    color: orangered;
     border: black;
 }
+.tabcontent h3 {
+    display: inline;
+    color: coral;
+  font-size: 70%;
 
+  margin-left: 290px;
+
+}
 /* The grid: Four equal columns that floats next to each other */
 
 .column {
   float: left;
   width: 24%;
-    height: auto;
+    height: 400px;
   border: 6px double black;
 }
 img {
@@ -162,7 +168,12 @@ img {
   cursor: pointer;
 }
 
-
+.column1 {
+  float: left;
+  width: 45%;
+    height: auto;
+  border: 6px double black;
+}
 
 
 /* form*/
@@ -171,7 +182,7 @@ img {
     display: inline;
     color: steelblue;
   font-family: verdana;
-  font-size: 100%;
+  font-size: 80%;
 
   margin-left: 200px;
 
