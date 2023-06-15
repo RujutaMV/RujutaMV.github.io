@@ -11,13 +11,15 @@
       <header>
         <img class="header-img" src ="vm_logo.jpg" alt="Vishwadharma Logo" />
         <h1>Vishwa Dharma Marathon - 2023</h1>
-        <img class="header-img" src ="hss_logo.jpg" alt="Vishwadharma Logo" />
+
     </header>
 <!-- Tab links -->
 <div class="tab">
   <button class="tablinks active" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Country Highlights')">Country Highlights</button>
+  <button class="tablinks" onclick="openCity(event, 'Top Participants')">Top Participants</button>
   <button class="tablinks" onclick="openCity(event, 'Statistics')">Statistics</button>
-  <button class="tablinks" onclick="openCity(event, 'Visuals')">Visuals</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
 </div>
 
 <!-- Tab content inside the tab home -->
@@ -25,7 +27,8 @@
   <!--<h3>Introduction</h3><br>-->
 <p>
 This is an yearly event that is conducted by HSS at the European Main Land
-level (EML) from the shareerik team including all the EML countries only.<br>
+level (EML) from the shareerik team including all the EML countries only. This activity is conducted
+  every year from the month of May to August.<br><br>
   The aim of this event is to complete kilometers equal to one rotation of the Earth(40,075km).
       Along with it, we would have better health and healthy competition.
   The activities included are: Running, Cycling, Walking & Swimming. The kms can be tracked by
@@ -34,10 +37,132 @@ level (EML) from the shareerik team including all the EML countries only.<br>
       <a href="FAQ's for VDM.pdf">
       <button onclick="FAQ's for VDM.pdf">
       FAQ
-    </button> </a> </p>
 
+    </button> </a>
+  <br> <br>Do you want to join us?
+  <br>If yes, then to participate and record your contribution, click
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9p-sJLhg7UEOqfDeqCYjq8NoblTKKjteqL6BzzehnEo6qKg/viewform">
+      <button onclick="https://docs.google.com/forms/d/e/1FAIpQLSd9p-sJLhg7UEOqfDeqCYjq8NoblTKKjteqL6BzzehnEo6qKg/viewform">
+      here
+
+    </button> </a>
+</p>
+</div>
+<!-- Tab content inside the tab statistics -->
+<div id="Country Highlights" class="tabcontent">
+  <h1 class="text-left-right">
+    <span class="left-text">Latest update at: </span>
+</h1>
+  <h3 id="demo"> </h3>
+<h1 class="text-left-right">
+    <span class="left-text">Number of distinct participants:</span>
+    <span class="byline">353</span>
+</h1>
+<h1 class="text-left-right">
+    <span class="left-text">Total distance covered in km:</span>
+    <span class="byline">22442</span>
+</h1>
+<h1 class="text-left-right">
+    <span class="left-text">Total number of countries participating:</span>
+    <span class="byline">13</span>
+</h1>
+<div class="row">
+  <div class="column1">
+    <img src="total_distance_by_country_donut.png" alt="total_distance_by_Country" >
+  </div>
+     <div class="column1">
+    <img src="unique_name_count_by_country.png" alt="total_distance_by_Country" >
+  </div>
+  <div class="column1">
+    <img src="total_distance_by_top_Country.png" alt="total_distance_by_Country" onclick="myFunction(this);">
+  </div>
+    </div>
+ </div>
+<div id="Top Participants" class="tabcontent">
+  <h1 class="text-left-right">
+    <span class="left-text">Latest update at: </span>
+</h1>
+  <h3 id="date"> </h3>
+<h1 class="text-left-right">
+    <span class="left-text">Number of Cycling participants:</span>
+    <span class="byline">167</span>
+</h1>
+<h1 class="text-left-right">
+    <span class="left-text">Number of Walking participants:</span>
+    <span class="byline">207</span>
+</h1>
+<h1 class="text-left-right">
+    <span class="left-text">Number of Running participants:</span>
+    <span class="byline">17</span>
+</h1>
+<div class="row">
+
+  <div class="column1">
+    <img src="top_5_names_by_distance_Cycling.png" alt="total_distance_by_Country" >
+  </div>
+     <div class="column1">
+    <img src="top_5_names_by_distance_Running.png" alt="total_distance_by_Country" >
+  </div>
+  <div class="column1">
+    <img src="top_5_names_by_distance_Walking.png" alt="total_distance_by_Country" onclick="myFunction(this);">
+  </div>
+  <div class="column1">
+    <img src="top_five_names_by_activity.png" alt="total_distance_by_Country" >
+  </div>
+    </div>
+ </div>
+<!-- Tab content inside the tab visuals -->
+<div id="Statistics" class="tabcontent">
+        <!-- The grid: four columns -->
+<p>
+  Click on the image and scroll down to see full-scale view:
+</p>
+
+<div class="row">
+  <div class="column">
+    <img src="daily_distance_by_sports.png" alt="Distance based n Sport" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="top_five_names_by_activity.png" alt="top_five_names" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="total_distance_by_Country.png" alt="total_distance_by_Country" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="distance_by_age_2023-06-12_donut_plot.png" alt="total_distance_by_Country" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="total_distance_by_Associated Shakha.png" alt="total_distance_by_Associated Shakha" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="total_distance_by_country_donut.png" alt="total_distance_by_Country" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="total_distance_by_top_Associated Shakha.png" alt="total_distance_by_Associated Shakha" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="total_distance_by_top_Country.png" alt="total_distance_by_Country" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+</div>
+
+      <div id="Contact" class="tabcontent">
+  <!--<h3>Introduction</h3><br>-->
+<p>
   <div class="form">
-  <h2>Contact Form</h2>
+
 <p>Thank You! for visiting the website! <br>
   If you want to write to us, feel free to fill the contact form with your message.<br>
 Our team of representatives will surely take your opinion into account. <br>
@@ -68,9 +193,10 @@ Please do not share any private contact information here.</p>
     </div>
     <div class="col-75">
       <select id="country" name="country">
-        <option value="Germany">Germany</option>
+         <option value="Germany">Germany</option>
         <option value="India">India</option>
         <option value="France">France</option>
+        <option value="Other">Other</option>
       </select>
     </div>
   </div>
@@ -89,60 +215,15 @@ Please do not share any private contact information here.</p>
   </form>
 </div>
 </div>
-<!-- Tab content inside the tab statistics -->
-<div id="Statistics" class="tabcontent">
-<h1 class="text-left-right">
-    <span class="left-text">Number of distinct participants:</span>
-    <span class="byline">168</span>
-</h1>
-<h1 class="text-left-right">
-    <span class="left-text">Total distance covered in km:</span>
-    <span class="byline">5000</span>
-</h1>
-<h1 class="text-left-right">
-    <span class="left-text">Total number of countries participating:</span>
-    <span class="byline">15</span>
-</h1>
-<h1 class="text-left-right">
-    <span class="left-text">Total number of Shakas participating:</span>
-    <span class="byline">20</span>
-</h1>
-</div>
-
-<!-- Tab content inside the tab visuals -->
-<div id="Visuals" class="tabcontent">
-        <!-- The grid: four columns -->
-
-<div class="row">
-  <div class="column">
-    <img src="daily_distance_by_sports.png" alt="Distance based n Sport" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="top_five_names_by_activity.png" alt="Snow" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="total_distance_by_Country.png" alt="Mountains" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="total_distance_by_Associated Shakha.png" alt="Lights" onclick="myFunction(this);">
-  </div>
-</div>
-
-<!-- The expanding image container -->
-<div class="container">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
-
-  <!-- Image text -->
-  <div id="imgtext"></div>
-</div>
-</div>
-
 
 <script>
+
+
+  var x = new Date()
+  document.getElementById('demo').innerHTML = x;
+  document.getElementById('date').innerHTML = x;
+
+
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -178,8 +259,8 @@ function myFunction(imgs) {
   // Show the container element (hidden with CSS)
   expandImg.parentElement.style.display = "block";
 }
-</script>
 
+</script>
 
   </body>
 </html>
